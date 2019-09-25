@@ -19,21 +19,24 @@ for (i=0; i<numberHits; i++){
       break;
       }
   // generate random damage for player
-  
+  playerDamage = Math.ceil(Math.random() * 2);
   // subtract player damage from dragon reserve
-  
+  dragonReserve = dragonReserve - playerDamage;
   // check to see if dragon is dead
-  if (){
+  if (playerReserve <=0){
       // if the dragon is defeated then alert a message and leave loop
-      
+      alert("dragon has won");
+      break;
       }
 }
 
 // check to see if the battle was a tie
-if (){
+if (playerReserve=dragonReserve){
     // alert the user that the battle was a tie
-    
+       alert("battle was a tie");
+      break;
     }
+End;
 
 
 
